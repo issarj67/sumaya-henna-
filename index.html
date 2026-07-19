@@ -1,216 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sumaya Henna</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-/* GLOBAL THEME */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fdf7f2 url('https://i.imgur.com/0hZ6FQb.png');
-  background-size: cover;
+  background-color: #fdf7f2;
   color: #5a3e3e;
   margin: 0;
 }
 
-/* GOLD GEOMETRIC BORDER */
-.top-border {
-  width: 100%;
-  height: 12px;
-  background: url('https://i.imgur.com/8mJm7tF.png');
-  background-size: contain;
-  background-repeat: repeat-x;
-}
-
 /* HEADER */
 header {
-  padding: 60px;
+  background-color: #f8e9dd;
+  border-bottom: 3px solid #d8b89c;
+  padding: 20px 0;
   text-align: center;
-  background: linear-gradient(135deg, #f8e9dd, #f3d7c2);
-  border-bottom: 4px solid #d8b89c;
 }
 
 header img {
-  width: 180px;
+  width: 160px;
   border-radius: 50%;
-  border: 4px solid #d8b89c;
-  padding: 5px;
+  border: 3px solid #d8b89c;
 }
 
-h1 {
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #8b5c70;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #d8b89c;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('banner.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 120px 20px;
+  color: #5a3e3e;
+}
+
+.hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3em;
-  margin-top: 15px;
-  color: #8b5c70;
+  margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.1em;
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-/* BUTTON */
-a.btn {
-  background: #8b5c70;
+.hero .btn {
+  background-color: #8b5c70;
   color: #fff;
   padding: 12px 25px;
-  text-decoration: none;
   border-radius: 30px;
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 500;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* SECTION */
+/* SERVICES SECTION */
 section {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-  padding: 40px;
+  padding: 50px 20px;
 }
 
-/* DECORATIVE LINE */
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #8b5c70;
+}
+
 .decor {
   height: 4px;
   width: 120px;
   background: #d8b89c;
-  margin: 20px auto;
-  border-radius: 2px;
-}
-
-/* SERVICES */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #f8e9dd;
-  padding: 12px 15px;
-  margin: 10px 0;
-  border-left: 5px solid #d8b89c;
-  border-radius: 8px;
-  font-size: 1.1em;
-}
-
-/* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  border: 3px solid #d8b89c;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* FORM */
-form input, form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #d8b89c;
-  border-radius: 8px;
-  background: #fff8f3;
-}
-
-form button {
-  background: #8b5c70;
-  color: #fff;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 1em;
-  margin-top: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #8b5c70;
-  color: #fff;
-  margin-top: 40px;
-  font-size: 0.9em;
-  letter-spacing: 1px;
-}
-</style>
-</head>
-
-<body>
-
-<div class="top-border"></div>
-
-<header>
-  <img src="logo.jpg">
-  <h1>Sumaya Henna</h1>
-  <div class="decor"></div>
-  <p>Elegant • Traditional • Bridal • Custom Henna Art</p>
-  <a class="btn" href="#contact">Book Now</a>
-</header>
-
-<section>
-  <h2 style="text-align:center; font-family:'Playfair Display', serif; color:#8b5c70;">Our Services</h2>
-  <div class="decor"></div>
-
-  <ul>
-    <li>Bridal Henna</li>
-    <li>Eid & Ramadan Henna</li>
-    <li>Private Events & Parties</li>
-    <li>Custom Designs</li>
-  </ul>
-</section>
-
-<section>
-  <h2 style="text-align:center; font-family:'Playfair Display', serif; color:#8b5c70;">Gallery</h2>
-  <div class="decor"></div>
-
-  <div class="gallery">
-    <img src="henna1.jpg">
-    <img src="henna2.jpg">
-    <img src="henna3.jpg">
-    <img src="henna4.jpg">
-    <img src="henna5.jpg">
-    <img src="henna6.jpg">
-  </div>
-</section>
-
-<section id="contact">
-  <h2 style="text-align:center; font-family:'Playfair Display', serif; color:#8b5c70;">Book an Appointment</h2>
-  <div class="decor"></div>
-
-  <form action="https://formspree.io/f/xpqvdypj" method="POST">
-    <label>Name</label>
-    <input type="text" name="name" required>
-
-    <label>Email</label>
-    <input type="email" name="email" required>
-
-    <label>Preferred Date</label>
-    <input type="date" name="date" required>
-
-    <label>Design Request / Notes</label>
-    <textarea name="message" rows="5"></textarea>
-
-    <button type="submit">Submit Booking Request</button>
-  </form>
-
-  <p style="text-align:center; margin-top:20px;">
-    Instagram: <a href="https://instagram.com/hennaby.mayaa">@hennaby.mayaa</a><br>
-    Email: <a href="mailto:summiixeessa14@gmail.com">summiixeessa14@gmail.com</a>
-  </p>
-</section>
-
-<footer>© 2026 Sumaya Henna — Crafted with Love</footer>
-
-</body>
-</html>
+  margin: 
