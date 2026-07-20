@@ -15,10 +15,6 @@ body {
   color: #5a3e3e;
   margin: 0;
 }
-.gallery img {
-  width: 250px;   /* make smaller */
-  height: auto;
-}
 
 /* HEADER */
 header {
@@ -102,7 +98,7 @@ h2 {
 /* GALLERY GRID */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
@@ -112,6 +108,7 @@ h2 {
   border-radius: 10px;
   border: 3px solid #d8b89c;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
 }
 
 /* BOOKING FORM */
@@ -194,19 +191,23 @@ footer {
 <section id="gallery">
   <h2>Gallery</h2>
   <div class="decor"></div>
-  <div class="gallery">
 
-    
-    
-    <img src="weding.jpeg" alt="Henna Design 1" width="100">
-</div> 
-  
-    <img src="henna2.jpeg" alt="Henna Design 1" width="200">
-</div>
-    <img src="henna.jpeg" alt="Henna Design 3 >" width="200">
-  </div>
-  
-    <img src="henna4.jpeg" alt="Henna Design 4">
+  <div class="gallery">
+    <a href="weding.jpeg" target="_blank">
+      <img src="weding.jpeg" alt="Wedding Henna">
+    </a>
+
+    <a href="henna2.jpeg" target="_blank">
+      <img src="henna2.jpeg" alt="Henna Design 2">
+    </a>
+
+    <a href="henna.jpeg" target="_blank">
+      <img src="henna.jpeg" alt="Henna Design 3">
+    </a>
+
+    <a href="henna4.jpeg" target="_blank">
+      <img src="henna4.jpeg" alt="Henna Design 4">
+    </a>
   </div>
 </section>
 
