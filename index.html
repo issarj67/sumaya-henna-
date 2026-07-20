@@ -15,6 +15,10 @@ body {
   color: #5a3e3e;
   margin: 0;
 }
+.gallery img {
+  width: 250px;   /* make smaller */
+  height: auto;
+}
 
 /* HEADER */
 header {
@@ -75,81 +79,30 @@ nav a:hover {
 }
 
 /* SERVICES SECTION */
-<section id="menu" style="
-  max-width: 650px;
-  margin: 60px auto;
-  background: #fdf7f2;
-  padding: 35px;
-  border-radius: 18px;
-  border: 2px solid #d8b89c;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
- text-align: left;
-padding-left: 80px;
-margin-top: 20px;
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
 
-">
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #8b5c70;
+}
 
-  <h2 style="
-    font-family: 'Playfair Display', serif;
-    color: #8b5c70;
-    font-size: 1.8em;
-    margin: 15px 0 25px;
-
-  ">
-    Henna Menu
-  </h2>
-
-  <div style="
-    height: 3px;
-    width: 100px;
-    background: #d8b89c;
-    margin: 15px auto 25px;
-    border-radius: 2px;
-  "></div>
-
-  <p style="
-    font-size: 1.1em;
-    color: #5a3e3e;
-    margin-bottom: 25px;
-    font-weight: 500;
-    letter-spacing: 1px;
-  ">
-    Khaleeji • Floral • Islamic Style
-  </p>
-
-  <div style="
-    text-align: left;
-    font-size: 1.15em;
-    line-height: 1.9;
-    color: #5a3e3e;
-  ">
-    <strong style="color:#8b5c70;">Bridal Henna</strong><br>
-    Elegant full bridal designs with Khaleeji + floral patterns.
-
-    <br><br>
-
-    <strong style="color:#8b5c70;">Eid & Ramadan Henna</strong><br>
-    Beautiful festive designs for Eid nights and Ramadan gatherings.
-
-    <br><br>
-
-    <strong style="color:#8b5c70;">Private Events & Parties</strong><br>
-    Henna for birthdays, bridal showers, baby showers, and group events.
-
-    <br><br>
-
-    <strong style="color:#8b5c70;">Custom Designs</strong><br>
-    Personalized henna art inspired by your style and ideas.
-  </div>
-
-</section>
-
-
+.decor {
+  height: 4px;
+  width: 120px;
+  background: #d8b89c;
+  margin: 20px auto;
+  border-radius: 2px;
+}
 
 /* GALLERY GRID */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
@@ -159,7 +112,6 @@ margin-top: 20px;
   border-radius: 10px;
   border: 3px solid #d8b89c;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  cursor: pointer;
 }
 
 /* BOOKING FORM */
@@ -242,23 +194,19 @@ footer {
 <section id="gallery">
   <h2>Gallery</h2>
   <div class="decor"></div>
-
   <div class="gallery">
-    <a href="weding.jpeg" target="_blank">
-      <img src="weding.jpeg" alt="Wedding Henna">
-    </a>
 
-    <a href="henna2.jpeg" target="_blank">
-      <img src="henna2.jpeg" alt="Henna Design 2">
-    </a>
-
-    <a href="henna.jpeg" target="_blank">
-      <img src="henna.jpeg" alt="Henna Design 3">
-    </a>
-
-    <a href="henna4.jpeg" target="_blank">
-      <img src="henna4.jpeg" alt="Henna Design 4">
-    </a>
+    
+    
+    <img src="weding.jpeg" alt="Henna Design 1" width="100">
+</div> 
+  
+    <img src="henna2.jpeg" alt="Henna Design 1" width="200">
+</div>
+    <img src="henna.jpeg" alt="Henna Design 3 >" width="200">
+  </div>
+  
+    <img src="henna4.jpeg" alt="Henna Design 4">
   </div>
 </section>
 
@@ -287,4 +235,3 @@ footer {
 
 </body>
 </html>
-
